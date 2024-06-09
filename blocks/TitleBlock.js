@@ -99,7 +99,7 @@ const TitleBlock = () => {
               transition={{ delay: 68, duration: 2 }}
             >
               <div
-                className="flex flex-col items-center h-40 mt-10 text-base leading-8 text-gray-200 tablet:leading-10 tablet:text-xl font-miamaNueva"
+                className="flex flex-col items-center h-40 mt-10 text-sm leading-7 text-gray-200 phoneH:text-base phoneH:leading-8 tablet:leading-10 tablet:text-xl font-miamaNueva"
                 // style={{ textShadow: '1px 1px 1px #ffffff' }}
               >
                 <TextLine
@@ -250,7 +250,7 @@ const TitleBlock = () => {
             >
               <SvgKavichki className="absolute bottom-0 left-0 w-4 h-4 tablet:w-6 tablet:h-6 fill-gray-500" />
 
-              <div className="px-6 py-6 text-base italic leading-7 text-gray-200 tablet:px-10 teblet:text-xl tablet:leading-8 font-miamaNueva">
+              <div className="px-6 py-6 text-sm italic leading-6 text-gray-200 phoneH:text-base phoneH:leading-7 tablet:px-10 teblet:text-xl tablet:leading-8 font-miamaNueva">
                 Я в тебя влюбился не с первого взгляда, а с первого сообщения от
                 тебя.
                 <br />И уже тогда я понял, что, Вау, так не бывает.
