@@ -96,7 +96,7 @@ const TitleBlock = () => {
             <motion.div
               initial={{ height: 'auto' }}
               animate={{ height: 0 }}
-              transition={{ delay: 68 }}
+              transition={{ delay: 68, duration: 2 }}
             >
               <div
                 className="flex flex-col items-center h-40 mt-10 text-base leading-8 text-gray-200 tablet:leading-10 tablet:text-xl font-miamaNueva"
