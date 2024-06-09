@@ -78,7 +78,7 @@ const TitleBlock = () => {
       </div>
       {!isStarted ? (
         <div
-          className="absolute px-8 py-6 text-lg font-bold text-black -translate-x-1/2 -translate-y-1/2 bg-gray-200 border-4 border-black rounded-lg cursor-pointer top-1/2 left-1/2"
+          className="absolute px-8 py-6 text-lg font-bold text-center text-black -translate-x-1/2 -translate-y-1/2 bg-gray-200 border-4 border-black rounded-lg cursor-pointer  whitespace-nowrap top-1/2 left-1/2"
           onClick={() => setIsStarted(true)}
         >
           Нажми на меня
