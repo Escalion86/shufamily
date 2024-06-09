@@ -8,20 +8,20 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const Photo = ({ src, delay, priority }) => {
-  const [rotation, setRotation] = useState(Math.random() * 70 - 35)
+  const [rotation, setRotation] = useState(Math.random() * 68 - 34)
   // const rotation = Math.random() * 90 - 45
   return (
     <motion.div
       initial={{ opacity: 0, left: 0 }}
       animate={{ opacity: 1, left: '50%' }}
-      transition={{ duration: 1, delay: 1 }}
+      transition={{ duration: 1, delay: 2 }}
       // style={{ rotate: `${rotation}deg` }}
       className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-[72%] max-w-100"
     >
       <motion.div
         initial={{ rotate: 0 }}
         animate={{ rotate: `${rotation}deg` }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 1, delay: 2 }}
         // style={{ rotate: `${rotation}deg` }}
         className="px-[2.8%] pt-[2.8%] shadow-lg bg-[#ece7df] pb-[11%]"
       >
@@ -78,7 +78,7 @@ const TitleBlock = () => {
       </div>
       {!isStarted ? (
         <div
-          className="absolute px-8 py-6 text-lg font-bold text-center text-black -translate-x-1/2 -translate-y-1/2 bg-gray-200 border-4 border-black rounded-lg cursor-pointer  whitespace-nowrap top-1/2 left-1/2"
+          className="absolute px-8 py-6 text-lg font-bold text-center text-black -translate-x-1/2 -translate-y-1/2 bg-gray-200 border-4 border-black rounded-lg cursor-pointer whitespace-nowrap top-1/2 left-1/2"
           onClick={() => setIsStarted(true)}
         >
           Нажми на меня
