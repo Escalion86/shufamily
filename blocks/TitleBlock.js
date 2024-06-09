@@ -14,14 +14,14 @@ const Photo = ({ src, delay, priority }) => {
     <motion.div
       initial={{ opacity: 0, left: 0 }}
       animate={{ opacity: 1, left: '50%' }}
-      transition={{ duration: 1, delay }}
+      transition={{ duration: 1, delay: 1 }}
       // style={{ rotate: `${rotation}deg` }}
       className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-[72%] max-w-100"
     >
       <motion.div
         initial={{ rotate: 0 }}
         animate={{ rotate: `${rotation}deg` }}
-        transition={{ duration: 1, delay }}
+        transition={{ duration: 1, delay: 1 }}
         // style={{ rotate: `${rotation}deg` }}
         className="px-[2.8%] pt-[2.8%] shadow-lg bg-[#ece7df] pb-[11%]"
       >
@@ -30,7 +30,7 @@ const Photo = ({ src, delay, priority }) => {
           className="object-cover aspect-1"
           width={400}
           height={400}
-          priority={priority}
+          priority
         />
       </motion.div>
     </motion.div>
