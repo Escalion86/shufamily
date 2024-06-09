@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const TextLine = ({ text, delay, isVisible }) => {
+const TextLine = ({ text, delay, isVisible, big }) => {
   // const [isVisible, setIsVisible] = useState(true)
 
   // useEffect(() => {
@@ -29,7 +29,7 @@ const TextLine = ({ text, delay, isVisible }) => {
           delay: isVisible ? delay : 0, // custom duration for opacity property only
         },
       }}
-      className="whitespace-nowrap"
+      className={'whitespace-nowrap' + (big ? ' scale-125' : '')}
     >
       {text}
     </motion.div>

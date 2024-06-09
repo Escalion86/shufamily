@@ -48,7 +48,7 @@ const TitleBlock = () => {
       var audio = new Audio('music.mp3')
       audio.play()
     }
-    if (sec > 67) {
+    if (sec > 72) {
       clearInterval(interval)
     }
   }, [sec, isStarted])
@@ -96,7 +96,7 @@ const TitleBlock = () => {
             <motion.div
               initial={{ height: 'auto' }}
               animate={{ height: 0 }}
-              transition={{ delay: 68, duration: 2 }}
+              transition={{ delay: 69, duration: 2 }}
             >
               <div
                 className="flex flex-col items-center h-40 mt-10 text-sm leading-7 text-gray-200 phoneH:text-base phoneH:leading-8 tablet:leading-10 tablet:text-xl font-miamaNueva"
@@ -190,7 +190,7 @@ const TitleBlock = () => {
                   key="15"
                   text="Я люблю тебя каждой клеточкой себя"
                   delay={46}
-                  isVisible={sec < 57}
+                  isVisible={sec < 60}
                 />
                 <TextLine
                   key="16"
@@ -202,17 +202,24 @@ const TitleBlock = () => {
                   key="17"
                   text="Чего бы мне это не стоило,"
                   delay={52}
-                  isVisible={sec < 63}
+                  isVisible={sec < 60}
                 />
                 <TextLine
                   key="18"
-                  text="Я готов с тобой идти до самого конца!"
+                  text="Я готов с тобой идти..."
                   delay={55}
-                  isVisible={sec < 66}
+                  isVisible={sec < 60}
+                />
+                <TextLine
+                  big
+                  key="18"
+                  text="...до самого конца!"
+                  delay={60}
+                  isVisible={sec < 68}
                 />
               </div>
             </motion.div>
-            <div className="relative w-[68%] aspect-1 max-w-[350px] mt-4 tablet:mt-0">
+            <div className="relative w-[68%] aspect-1 max-w-[350px] mt-8 tablet:mt-0">
               {sec >= 5 && <Photo src="fotos/1.jpg" delay={0} />}
               {sec >= 10 && <Photo src="fotos/2.jpg" delay={0} />}
               {sec >= 15 && <Photo src="fotos/3.jpg" delay={0} />}
@@ -245,7 +252,7 @@ const TitleBlock = () => {
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
-              transition={{ duration: 3, delay: 68 }}
+              transition={{ duration: 3, delay: 71 }}
               className="relative mt-4"
             >
               <SvgKavichki className="absolute bottom-0 left-0 w-4 h-4 tablet:w-6 tablet:h-6 fill-gray-500" />
