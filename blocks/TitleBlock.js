@@ -213,34 +213,34 @@ const TitleBlock = () => {
               </div>
             </motion.div>
             <div className="relative w-[68%] aspect-1 max-w-[350px] mt-4 tablet:mt-0">
-              <Photo src="fotos/1.jpg" delay={5} priority />
-              <Photo src="fotos/2.jpg" delay={10} priority />
-              <Photo src="fotos/3.jpg" delay={15} />
-              <Photo src="fotos/4.jpg" delay={20} />
-              <Photo src="fotos/5.jpg" delay={25} />
-              <Photo src="fotos/6.jpg" delay={30} />
-              <Photo src="fotos/7.jpg" delay={35} />
-              <Photo src="fotos/8.jpg" delay={40} />
-              <Photo src="fotos/9.jpg" delay={45} />
-              <Photo src="fotos/11.jpg" delay={50} />
-              <Photo src="fotos/12.jpg" delay={55} />
-              <Photo src="fotos/13.jpg" delay={60} />
-              <Photo src="fotos/14.jpg" delay={65} />
-              <Photo src="fotos/15.jpg" delay={70} />
-              <Photo src="fotos/16.jpg" delay={75} />
-              <Photo src="fotos/17.jpg" delay={80} />
-              <Photo src="fotos/18.jpg" delay={85} />
-              <Photo src="fotos/19.jpg" delay={90} />
-              <Photo src="fotos/20.jpg" delay={95} />
-              <Photo src="fotos/21.jpg" delay={100} />
-              <Photo src="fotos/22.jpg" delay={105} />
-              <Photo src="fotos/23.jpg" delay={110} />
-              <Photo src="fotos/24.jpg" delay={115} />
-              <Photo src="fotos/25.jpg" delay={120} />
-              <Photo src="fotos/26.jpg" delay={125} />
-              <Photo src="fotos/27.jpg" delay={130} />
-              <Photo src="fotos/28.jpg" delay={140} />
-              <Photo src="fotos/29.jpg" delay={145} />
+              {sec >= 5 && <Photo src="fotos/1.jpg" delay={0} />}
+              {sec >= 10 && <Photo src="fotos/2.jpg" delay={0} />}
+              {sec >= 15 && <Photo src="fotos/3.jpg" delay={0} />}
+              {sec >= 20 && <Photo src="fotos/4.jpg" delay={0} />}
+              {sec >= 25 && <Photo src="fotos/5.jpg" delay={0} />}
+              {sec >= 30 && <Photo src="fotos/6.jpg" delay={0} />}
+              {sec >= 35 && <Photo src="fotos/7.jpg" delay={0} />}
+              {sec >= 40 && <Photo src="fotos/8.jpg" delay={0} />}
+              {sec >= 45 && <Photo src="fotos/9.jpg" delay={0} />}
+              {sec >= 50 && <Photo src="fotos/11.jpg" delay={0} />}
+              {sec >= 55 && <Photo src="fotos/12.jpg" delay={0} />}
+              {sec >= 60 && <Photo src="fotos/13.jpg" delay={0} />}
+              {sec >= 65 && <Photo src="fotos/14.jpg" delay={0} />}
+              {sec >= 70 && <Photo src="fotos/15.jpg" delay={0} />}
+              {sec >= 75 && <Photo src="fotos/16.jpg" delay={0} />}
+              {sec >= 80 && <Photo src="fotos/17.jpg" delay={0} />}
+              {sec >= 85 && <Photo src="fotos/18.jpg" delay={0} />}
+              {sec >= 90 && <Photo src="fotos/19.jpg" delay={0} />}
+              {sec >= 95 && <Photo src="fotos/20.jpg" delay={0} />}
+              {sec >= 100 && <Photo src="fotos/21.jpg" delay={0} />}
+              {sec >= 105 && <Photo src="fotos/22.jpg" delay={0} />}
+              {sec >= 110 && <Photo src="fotos/23.jpg" delay={0} />}
+              {sec >= 115 && <Photo src="fotos/24.jpg" delay={0} />}
+              {sec >= 120 && <Photo src="fotos/25.jpg" delay={0} />}
+              {sec >= 125 && <Photo src="fotos/26.jpg" delay={0} />}
+              {sec >= 130 && <Photo src="fotos/27.jpg" delay={0} />}
+              {sec >= 135 && <Photo src="fotos/28.jpg" delay={0} />}
+              {sec >= 140 && <Photo src="fotos/29.jpg" delay={0} />}
             </div>
             <motion.div
               initial={{ opacity: 0, height: 0 }}
