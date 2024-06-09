@@ -88,35 +88,35 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="yandex-verification" content="84f03833d2efe6ef" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preload" href="/photos/1.jpg" as="image" />
-        <link rel="preload" href="/photos/2.jpg" as="image" />
-        <link rel="preload" href="/photos/3.jpg" as="image" />
-        <link rel="preload" href="/photos/4.jpg" as="image" />
-        <link rel="preload" href="/photos/5.jpg" as="image" />
-        <link rel="preload" href="/photos/6.jpg" as="image" />
-        <link rel="preload" href="/photos/7.jpg" as="image" />
-        <link rel="preload" href="/photos/8.jpg" as="image" />
-        <link rel="preload" href="/photos/9.jpg" as="image" />
-        <link rel="preload" href="/photos/10.jpg" as="image" />
-        <link rel="preload" href="/photos/11.jpg" as="image" />
-        <link rel="preload" href="/photos/12.jpg" as="image" />
-        <link rel="preload" href="/photos/13.jpg" as="image" />
-        <link rel="preload" href="/photos/14.jpg" as="image" />
-        <link rel="preload" href="/photos/15.jpg" as="image" />
-        <link rel="preload" href="/photos/16.jpg" as="image" />
-        <link rel="preload" href="/photos/17.jpg" as="image" />
-        <link rel="preload" href="/photos/18.jpg" as="image" />
-        <link rel="preload" href="/photos/19.jpg" as="image" />
-        <link rel="preload" href="/photos/20.jpg" as="image" />
-        <link rel="preload" href="/photos/21.jpg" as="image" />
-        <link rel="preload" href="/photos/22.jpg" as="image" />
-        <link rel="preload" href="/photos/23.jpg" as="image" />
-        <link rel="preload" href="/photos/24.jpg" as="image" />
-        <link rel="preload" href="/photos/25.jpg" as="image" />
-        <link rel="preload" href="/photos/26.jpg" as="image" />
-        <link rel="preload" href="/photos/27.jpg" as="image" />
-        <link rel="preload" href="/photos/28.jpg" as="image" />
-        <link rel="preload" href="/photos/29.jpg" as="image" />
+        <link rel="preload" href="/fotos/1.jpg" as="image" />
+        <link rel="preload" href="/fotos/2.jpg" as="image" />
+        <link rel="preload" href="/fotos/3.jpg" as="image" />
+        <link rel="preload" href="/fotos/4.jpg" as="image" />
+        <link rel="preload" href="/fotos/5.jpg" as="image" />
+        <link rel="preload" href="/fotos/6.jpg" as="image" />
+        <link rel="preload" href="/fotos/7.jpg" as="image" />
+        <link rel="preload" href="/fotos/8.jpg" as="image" />
+        <link rel="preload" href="/fotos/9.jpg" as="image" />
+        <link rel="preload" href="/fotos/10.jpg" as="image" />
+        <link rel="preload" href="/fotos/11.jpg" as="image" />
+        <link rel="preload" href="/fotos/12.jpg" as="image" />
+        <link rel="preload" href="/fotos/13.jpg" as="image" />
+        <link rel="preload" href="/fotos/14.jpg" as="image" />
+        <link rel="preload" href="/fotos/15.jpg" as="image" />
+        <link rel="preload" href="/fotos/16.jpg" as="image" />
+        <link rel="preload" href="/fotos/17.jpg" as="image" />
+        <link rel="preload" href="/fotos/18.jpg" as="image" />
+        <link rel="preload" href="/fotos/19.jpg" as="image" />
+        <link rel="preload" href="/fotos/20.jpg" as="image" />
+        <link rel="preload" href="/fotos/21.jpg" as="image" />
+        <link rel="preload" href="/fotos/22.jpg" as="image" />
+        <link rel="preload" href="/fotos/23.jpg" as="image" />
+        <link rel="preload" href="/fotos/24.jpg" as="image" />
+        <link rel="preload" href="/fotos/25.jpg" as="image" />
+        <link rel="preload" href="/fotos/26.jpg" as="image" />
+        <link rel="preload" href="/fotos/27.jpg" as="image" />
+        <link rel="preload" href="/fotos/28.jpg" as="image" />
+        <link rel="preload" href="/fotos/29.jpg" as="image" />
         {/* <Script
           strategy="afterInteractive"
           src="https://cdn.jsdelivr.net/npm/@thelevicole/youtube-to-html5-loader@4.0.1/dist/YouTubeToHtml5.min.js"
