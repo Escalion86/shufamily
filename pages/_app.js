@@ -1,43 +1,3 @@
-// import '../styles/css/detskiy_prazdnik.css'
-// import '../styles/css/fokusnik_na_den_rozhdeniya_rebenka.css'
-// import '../styles/css/fokusnik_na_den_rozhdeniya_vzroslym.css'
-// import '../styles/css/fokusnik_na_korporativ.css'
-// import '../styles/css/fokusnik_na_svadbu.css'
-// import '../styles/css/fokusnik_na_ubilei.css'
-// import '../styles/css/fokusnik_na_vipusknoi.css'
-// import '../styles/css/iefonts_detskiy_prazdnik.css'
-// import '../styles/css/iefonts_fokusnik_na_den_rozhdeniya_rebenka.css'
-// import '../styles/css/iefonts_fokusnik_na_den_rozhdeniya_vzroslym.css'
-// import '../styles/css/iefonts_fokusnik_na_korporativ.css'
-// import '../styles/css/iefonts_fokusnik_na_svadbu.css'
-// import '../styles/css/iefonts_fokusnik_na_ubilei.css'
-// import '../styles/css/iefonts_fokusnik_na_vipusknoi.css'
-// import '../styles/css/iefonts_index.css'
-// import '../styles/css/iefonts_master_klass.css'
-// import '../styles/css/iefonts_obuchenie_fokusam.css'
-// import '../styles/css/iefonts_otzyvy.css'
-// import '../styles/css/iefonts_otzyvy-_____.css'
-// import '../styles/css/iefonts_shkola_volshebstva.css'
-// import '../styles/css/iefonts_show_dlya_vzroslih.css'
-// import '../styles/css/iefonts_spasibo.css'
-// import '../styles/css/iefonts_test.css'
-// import '../styles/css/index.css'
-// import '../styles/css/master_______-a.css'
-// import '../styles/css/master_______-a-_____-2.css'
-// import '../styles/css/master_______-b.css'
-// import '../styles/css/master_klass.css'
-// import '../styles/css/obuchenie_fokusam.css'
-// import '../styles/css/otzyvy.css'
-// import '../styles/css/otzyvy-_____.css'
-// import '../styles/css/shkola_volshebstva.css'
-// import '../styles/css/show_dlya_vzroslih.css'
-// import '../styles/css/site_global.css'
-// import '../styles/css/spasibo.css'
-// import '../styles/css/test.css'
-// import '../styles/css/zayavka.css'
-// import '../styles/css/.css'
-
-// import 'tailwindcss/tailwind.css'
 import '../styles/fonts/Montserrat/Montserrat.css'
 import '../styles/fonts/FuturaPT.css'
 import '../styles/fonts/AdleryPro.css'
@@ -50,20 +10,9 @@ import 'react-edit-text/dist/index.css'
 import '@wethegit/react-autoplay-video/style.css'
 
 import Head from 'next/head'
-import { SessionProvider } from 'next-auth/react'
-// import Script from 'next/script'
-import {
-  RecoilRoot,
-  RecoilEnv,
-  // atom,
-  // selector,
-  // useRecoilState,
-  // useRecoilValue,
-} from 'recoil'
 
 import { ThemeProvider } from '@mui/material/styles'
 
-// import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import 'react-loading-skeleton/dist/skeleton.css'
 
@@ -74,7 +23,6 @@ import { red } from '@mui/material/colors'
 import Script from 'next/script'
 import { SnackbarProvider } from 'notistack'
 import { useEffect } from 'react'
-// import { CssBaseline } from '@mui/material/'
 
 // Create a theme instance.
 const theme = createTheme({
@@ -123,8 +71,6 @@ const theme = createTheme({
 // const store = createStore(allReducers, enhancer)
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
-  RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false
-
   useEffect(() => {
     let vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
@@ -149,22 +95,15 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
         {/* <Script strategy="afterInteractive">{`new YouTubeToHtml5()`}</Script> */}
         {/* <script src="https://smtpjs.com/v3/smtp.js"></script> */}
       </Head>
-      <SessionProvider session={session} refetchInterval={5 * 60}>
-        {/* <Provider store={store}> */}
-        <RecoilRoot>
-          <ThemeProvider theme={theme}>
-            <SnackbarProvider maxSnack={4}>
-              <Script
-                src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"
-                strategy="beforeInteractive"
-              />
-              {/* <CssBaseline /> */}
-              <Component {...pageProps} />
-            </SnackbarProvider>
-          </ThemeProvider>
-        </RecoilRoot>
-        {/* </Provider> */}
-      </SessionProvider>
+      <ThemeProvider theme={theme}>
+        <SnackbarProvider maxSnack={4}>
+          <Script
+            src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"
+            strategy="beforeInteractive"
+          />
+          <Component {...pageProps} />
+        </SnackbarProvider>
+      </ThemeProvider>
     </>
   )
 }
