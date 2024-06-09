@@ -204,7 +204,7 @@ const TitleBlock = () => {
               />
             </div>
           </motion.div>
-          <div className="relative w-[68%] aspect-1 max-w-[420px] mt-4">
+          <div className="relative w-[68%] aspect-1 max-w-[350px] mt-4 tablet:mt-0">
             <Photo src="fotos/1.jpg" delay={5} />
             <Photo src="fotos/2.jpg" delay={10} />
             <Photo src="fotos/3.jpg" delay={15} />
